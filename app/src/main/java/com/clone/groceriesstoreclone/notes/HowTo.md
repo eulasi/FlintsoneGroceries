@@ -17,7 +17,7 @@ Create RetrofitInstance in the network package with base URL and a converter fac
 Create Repository in your repository package. Implement the Product Repository interface and use the ApiService to fetch data
 
 ### Dependency Injection with Hilt
-Create a module for Repository in a di package and define a module that provides the repository implementation
+Create a module for Repository in a di package and define a module that provides the repository implementation. Update the manifest with a My Application File and internet permissions.
 
 ### Create a Network Module for Hilt
 Create a module in the DI package and define a module that provides the Retrofit instance and the ApiService
