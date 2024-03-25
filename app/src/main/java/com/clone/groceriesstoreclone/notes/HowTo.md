@@ -3,8 +3,7 @@
 ### Adding Third-Party Resources
 
 #### Adding Dependencies
-- Navigate to the `build.gradle` file of the app module.
-- Insert the required dependencies.
+- Navigate to the `build.gradle` file of the app module to insert the required dependencies.
 
 #### Create Mock API Endpoints
 - Develop a mock for the Products API.
