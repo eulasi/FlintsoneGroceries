@@ -1,42 +1,76 @@
-### Adding Dependencies
-Open the build.gradle file for the app module and add the necessary dependencies.
+## Instructions for Creating the Project
 
-### Create Mock API Endpoints
-Create a Mock for Products
+### Adding Third-Party Resources
 
-### Create Data Classes
-Create Kotlin files in a model package
+#### Adding Dependencies
+- Navigate to the `build.gradle` file of the app module.
+- Insert the required dependencies.
 
-### Creating the API Service
-Create an API Service in the network package and define an interface for the service with endpoints to fetch data.
+#### Create Mock API Endpoints
+- Develop a mock for the Products API.
 
-### Setup Retrofit
-Create RetrofitInstance in the network package with base URL and a converter factory
+### Preparing Data
 
-### Create the Repository
-Create Repository in your repository package. Implement the Product Repository interface and use the ApiService to fetch data
+#### Create Data Classes
+- Generate Kotlin files within a `model` package for data representation.
 
-### Dependency Injection with Hilt
-Create a module for Repository in a di package and define a module that provides the repository implementation. Update the manifest with a My Application File and internet permissions.
+### Fetching Data
 
-### Create a Network Module for Hilt
-Create a module in the DI package and define a module that provides the Retrofit instance and the ApiService
+#### Creating the API Service
+- Establish an API service within the `network` package.
+- Define an interface in the service with endpoints for data retrieval.
 
-### Implement the ViewModel
-Create a ViewModel in the viewmodel package that uses the repository to fetch products and categories.
+#### Setup Retrofit
+- Create a `RetrofitInstance` in the `network` package.
+- Configure it with a base URL and a converter factory.
 
-### Setup the UI
-Create a fragment for the Product list in the ui package. Implement a Fragment that observes the products LiveData from the ViewModel and displays the product list
+### Creating the Repositories
 
-### Designing the product List UI
-create the new layout file. with the RecyclerView for displaying the product list. Create the RecyclerView Adapter
+#### Create the Repository
+- Construct a repository in the `repository` package.
+- Implement the Product Repository interface.
+- Utilize the ApiService to fetch data.
 
-### Design the product Item Layout
-Design the layout for each product iem with an imageView
+### Dependency Injection
 
-### Update the Fragment class
-update the method to set up the RecyclerView with the productAdapter
+#### Dependency Injection with Hilt
+- Develop a module for the repository within a `di` package.
+- Declare a module that provides the repository implementation.
+- Update the manifest with a custom Application class and internet permissions.
 
-### Finalize the MainActivity
-Update the MainActivity file to display the fragment.
+#### Create a Network Module for Hilt
+- Construct a module in the `di` package.
+- Define a module that supplies the Retrofit instance and the ApiService.
 
+### UI
+
+#### Implement the ViewModel
+- Create a ViewModel in the `viewmodel` package.
+- Employ the repository to fetch products and categories.
+
+#### Setup the UI
+- Generate a fragment for the Product list in the `ui` package.
+- Implement a Fragment that observes the products LiveData from the ViewModel and displays the product list.
+
+#### Designing the Product List UI
+- Create a new layout file with a RecyclerView for displaying the product list.
+- Develop the RecyclerView Adapter.
+
+#### Design the Product Item Layout
+- Design the layout for each product item with an ImageView.
+
+#### Update the Fragment Class
+- Modify the method to set up the RecyclerView with the productAdapter.
+
+### Build Preparation
+
+#### Finalize the MainActivity
+- Update the MainActivity file to display the fragment.
+
+### Keywords
+- **Endpoint:** A specific URL or address where an API can access the resources needed to perform its function.
+- **Fragment:** A portion of the user interface in an Android app, which can be used in activities.
+- **Repository:** A class that abstracts the data layer from the rest of the app, providing a clean API for data access to the rest of the application.
+- **Retrofit:** A type-safe HTTP client for Android and Java, used for making network requests.
+- **LiveData:** An observable data holder class that is lifecycle-aware, used in the context of Android architecture components.
+- **ViewModel:** A class designed to store and manage UI-related data in a lifecycle-conscious way, allowing data to survive configuration changes such as screen rotations.
