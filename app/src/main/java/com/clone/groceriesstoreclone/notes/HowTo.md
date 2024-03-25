@@ -67,7 +67,7 @@
 #### Finalize the MainActivity
 - Update the MainActivity file to display the fragment.
 
-### Terms
+### Key Terms
 - **Endpoint:** A specific URL or address where an API can access the resources needed to perform its function.
 - **Fragment:** A portion of the user interface in an Android app, which can be used in activities.
 - **Repository:** A class that abstracts the data layer from the rest of the app, providing a clean API for data access to the rest of the application.
